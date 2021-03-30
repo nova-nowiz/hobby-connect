@@ -122,6 +122,7 @@
   },
   "defaultProject": "hobby-connect",
   "cli": {
+    "analytics": "2954dc96-2fcf-4fd1-90c5-ffcc3672b9e4",
     "defaultCollection": "@angular-eslint/schematics"
   }
 }

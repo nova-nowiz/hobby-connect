@@ -1,3 +1,6 @@
-<div *ngFor="let item of items">
-  <app-theme-item [item]="item"></app-theme-item>
+<div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="center">
+  <div *ngFor="let item of items" fxFlex="25%" fxLayoutAlign="center">
+    <app-theme-item [item]="item"></app-theme-item>
+  </div>
 </div>
+

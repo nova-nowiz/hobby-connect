@@ -1,5 +1,6 @@
-<div class="item">
-  <div class="square">
-    <h1>{{item?.name}}</h1>
-  </div>
-</div>
+<mat-card class="item">
+  <mat-card-content fxLayout.gt-xs="row" fxLayout.xs="column">
+    <span fxFlex="100">{{item?.name}}</span>
+  </mat-card-content>
+</mat-card>
+

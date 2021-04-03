@@ -1,6 +1,7 @@
-<div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="center">
-  <div *ngFor="let item of items" fxFlex="25%" fxLayoutAlign="center">
+<div class="flex-container wrap">
+  <div *ngFor="let item of items">
     <app-theme-item [item]="item"></app-theme-item>
   </div>
 </div>
+
 

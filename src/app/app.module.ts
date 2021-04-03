@@ -5,11 +5,11 @@ import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { GroupsComponent } from './groups/groups.component';
-import { GroupsItemComponent } from './groups-item/groups-item.component';
+import { GroupsComponent } from './components/groups/groups.component';
+import { GroupsItemComponent } from './components/groups-item/groups-item.component';
 
-import { ThemeListComponent } from './theme-list/theme-list.component';
-import { ThemeItemComponent } from './theme-item/theme-item.component';
+import { ThemeListComponent } from './components/theme-list/theme-list.component';
+import { ThemeItemComponent } from './components/theme-item/theme-item.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Apollo, ApolloBase, gql, QueryRef } from 'apollo-angular';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Theme } from './theme';
+import { Theme } from '../models/theme';
 
 const GET_THEMES = gql`
   query GetThemes {

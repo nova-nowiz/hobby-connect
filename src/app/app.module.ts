@@ -29,6 +29,8 @@ import { MatCardModule } from '@angular/material/card';
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatCardModule,
+    HttpClientModule,
+    GraphQLModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

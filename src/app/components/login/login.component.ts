@@ -7,10 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  email = '';
-  password = '';
+  id = '';
 
   submit () {
-    window.alert(`email: '${this.email}', password: '${this.password}'`);
+    window.alert(`ID: ${this.id}`);
   }
 }

@@ -1,5 +1,5 @@
-<mat-card class="flex-item">
+<mat-card class="flex-item" [ngClass]="{'selected ': selected}">
   <mat-card-content>
-    <span>{{ theme?.theme }}</span>
+    <p>{{ theme?.theme }}</p>
   </mat-card-content>
 </mat-card>

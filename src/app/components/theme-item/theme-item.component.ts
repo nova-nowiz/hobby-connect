@@ -8,4 +8,5 @@ import { Theme } from '../../models/theme';
 })
 export class ThemeItemComponent {
   @Input() theme: Theme | undefined;
+  @Input() selected: Boolean = false;
 }

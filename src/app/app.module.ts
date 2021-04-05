@@ -1,16 +1,20 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { GroupsComponent } from './groups/groups.component';
-import { GroupsItemComponent } from './groups-item/groups-item.component';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {AppRoutingModule} from './app-routing.module';
+import {GraphQLModule} from './graphql.module';
+import {HttpClientModule} from '@angular/common/http';
 
-import { ThemeListComponent } from './theme-list/theme-list.component';
-import { ThemeItemComponent } from './theme-item/theme-item.component';
+import {AppComponent} from './app.component';
+import {GroupsComponent} from './components/groups/groups.component';
+import {GroupsItemComponent} from './components/groups-item/groups-item.component';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import {ThemeListComponent} from './components/theme-list/theme-list.component';
+import {ThemeItemComponent} from './components/theme-item/theme-item.component';
+
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -18,16 +22,20 @@ import {MatCardModule} from '@angular/material/card';
     ThemeListComponent,
     ThemeItemComponent,
     GroupsComponent,
-    GroupsItemComponent
+    GroupsItemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule,
+    GraphQLModule,
+    MatButtonModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+}

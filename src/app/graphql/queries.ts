@@ -2,8 +2,8 @@ export const GET_USER_ACTIVITY = `
 query GetUserActivity($id_user: Int!) {
   activity(where: { user_activities: { id_user: { _eq: $id_user } } }) {
     id
-    id_theme
     theme {
+      id
       theme
     }
     user_activities_aggregate {

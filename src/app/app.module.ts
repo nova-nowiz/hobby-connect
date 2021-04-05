@@ -19,6 +19,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule} from "@angular/forms";
 import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +29,7 @@ import { LoginComponent } from './components/login/login.component';
     GroupsComponent,
     GroupsItemComponent,
     LoginComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

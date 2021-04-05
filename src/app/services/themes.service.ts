@@ -3,7 +3,7 @@ import { Apollo, QueryRef } from 'apollo-angular';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Theme } from '../models/theme';
-import { GET_THEMES } from '../graphql/queries';
+import { GET_THEMES } from '../graphql/themesQueries';
 
 interface ResponseTheme {
   theme: Theme[];

@@ -3,12 +3,13 @@
   margin: 0;
   padding: 0;
 }
-html, body { height: 100%; }
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: #f0f2fd;
+
+html, body {
+  height: 100%;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  background-color: #474e5d;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

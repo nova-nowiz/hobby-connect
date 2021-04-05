@@ -47,3 +47,5 @@ Thumbs.db
 
 # Secret environment variables
 /.env
+
+package-lock.json

@@ -1,0 +1,10 @@
+
+<form #form="ngForm">
+  <mat-card>
+    <mat-form-field>
+      <input type="text" name="id" placeholder="ID" [(ngModel)]="id" matInput required>
+    </mat-form-field>
+  </mat-card>
+
+  <button mat-raised-button color="primary" (click)="submit()" [disabled]="form.invalid">Submit</button>
+</form>

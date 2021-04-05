@@ -15,6 +15,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from "@angular/material/button";
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule} from "@angular/forms";
+import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
@@ -24,6 +28,7 @@ import { HomeComponent } from './components/home/home.component';
     ThemeItemComponent,
     GroupsComponent,
     GroupsItemComponent,
+    LoginComponent,
     HomeComponent,
   ],
   imports: [
@@ -34,7 +39,10 @@ import { HomeComponent } from './components/home/home.component';
     MatCardModule,
     HttpClientModule,
     GraphQLModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent],

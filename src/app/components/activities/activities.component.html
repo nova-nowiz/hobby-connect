@@ -1,0 +1,12 @@
+<div class="container-groups">
+  <div class="timeline">
+    <ul *ngFor="let activity of activities">
+      <div *ngIf="activity.id % 2 == 0" class="container right">
+        <app-groups-item [activity]="activity"></app-groups-item>
+      </div>
+      <div *ngIf="activity.id % 2 != 0" class="container left">
+        <app-groups-item [activity]="activity"></app-groups-item>
+      </div>
+    </ul>
+  </div>
+</div>

@@ -4,6 +4,7 @@
 
 /* Set a background color */
 .container-groups {
+  margin-top: 50px;
   background-color: #474e5d;
   font-family: Helvetica, sans-serif;
 }

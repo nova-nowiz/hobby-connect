@@ -1,17 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Apollo, ApolloBase, gql, QueryRef } from 'apollo-angular';
+import { Apollo, QueryRef } from 'apollo-angular';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Theme } from '../models/theme';
-
-const GET_THEMES = gql`
-  query GetThemes {
-    theme {
-      id
-      theme
-    }
-  }
-`;
+import { GET_THEMES } from '../graphql/queries';
 
 interface ResponseTheme {
   theme: Theme[];

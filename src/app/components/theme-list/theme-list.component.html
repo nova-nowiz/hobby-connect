@@ -1,5 +1,5 @@
 <div class="flex-container wrap">
-  <div *ngFor="let theme of themes$ | async">
+  <div *ngFor="let theme of themes">
     <app-theme-item
       (click)="onClickTheme(theme)"
       [selected]="selected.includes(theme)"
@@ -16,6 +16,7 @@
     [disabled]="selected.length == 0"
     mat-raised-button
     routerLink="/groups"
+    (click)="registerSelectedThemes()"
   >
     GO
   </button>

@@ -7,7 +7,7 @@ require('dotenv').config();
 // read the command line arguments passed with yargs
 const environment = argv.environment;
 const isProduction = environment === 'prod';
-if (!process.env.HASURA_KEY) {
+if (!process.env.HASURA_KEY || !process.env.HASURA_ENDPOINT) {
   console.error('All the required environment variables were not provided!');
   process.exit(-1);
 }
@@ -21,6 +21,7 @@ const environmentFileContent = `
   export const environment = {
     production: ${isProduction},
     HASURA_KEY: "${process.env.HASURA_KEY}",
+    HASURA_ENDPOINT: "${process.env.HASURA_ENDPOINT}",
   };
 `;
 

@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
-import { CHECK_USER } from '../graphql/queries';
-import { User } from '../models/user';
-import { GraphQLService } from './graphql.service';
+import {Injectable} from '@angular/core';
+import {CHECK_USER} from '../graphql/queries';
+import {User} from '../models/user';
+import {GraphQLService} from './graphql.service';
 
 @Injectable({
   providedIn: 'root',
@@ -9,7 +9,8 @@ import { GraphQLService } from './graphql.service';
 export class MeService {
   private me: User | null | undefined;
 
-  constructor(private graphqlService: GraphQLService) {}
+  constructor(private graphqlService: GraphQLService) {
+  }
 
   login(user: User) {
     this.me = user;
@@ -17,5 +18,9 @@ export class MeService {
 
   logout() {
     this.me = null;
+  }
+
+  resolve() {
+    return this.me;
   }
 }

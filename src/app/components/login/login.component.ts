@@ -40,6 +40,6 @@ export class LoginComponent {
     }
     this.meService.login(dataUser.user_by_pk);
 
-    this.router.navigateByUrl('/activities');
+    this.router.navigateByUrl('/themes');
   }
 }

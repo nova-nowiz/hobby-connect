@@ -1,0 +1,20 @@
+@media screen and (max-width: 640px) {
+  form {
+    width: calc(100% - 2em) !important;
+    margin: 1em !important;
+  }
+}
+
+form {
+  width: 30em;
+  margin: 5em auto;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  margin-top: 1em;
+}

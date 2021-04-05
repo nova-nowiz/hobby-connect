@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  HASURA_KEY: 'secret_key',
 };

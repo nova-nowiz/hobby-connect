@@ -1,0 +1,23 @@
+<div class="flex-container wrap">
+  <div *ngFor="let theme of themes">
+    <app-theme-item
+      (click)="onClickTheme(theme)"
+      [selected]="selected.includes(theme)"
+      [theme]="theme"
+    ></app-theme-item>
+  </div>
+</div>
+<div class="go-button-div">
+  <button
+    [ngClass]="{
+      'go-button-enabled': selected.length > 0,
+      'go-button-disabled': selected.length == 0
+    }"
+    [disabled]="selected.length == 0"
+    mat-raised-button
+    routerLink="/activities"
+    (click)="registerSelectedThemes()"
+  >
+    GO
+  </button>
+</div>

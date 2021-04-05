@@ -1,0 +1,21 @@
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 180px;
+  height: 180px;
+  margin: 10px;
+
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+.flex-item mat-card-content{
+  padding-top:50px;
+}
+
+.selected {
+  background: dodgerblue;
+}
+

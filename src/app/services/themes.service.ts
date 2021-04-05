@@ -24,7 +24,6 @@ export class ThemesService {
   getThemes(): Observable<Theme[]> {
     return this.getRefThemes().valueChanges.pipe(
       map((result) => {
-        console.log(result.data.theme);
         return result.data.theme;
       })
     );

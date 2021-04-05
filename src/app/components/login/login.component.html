@@ -1,0 +1,14 @@
+
+<form #form="ngForm">
+  <mat-card>
+    <mat-form-field>
+      <input type="text" name="email" placeholder="Email" [(ngModel)]="email" matInput required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input type="password" name="password" placeholder="Password" [(ngModel)]="password" matInput required>
+    </mat-form-field>
+  </mat-card>
+
+  <button mat-raised-button color="primary" (click)="submit()" [disabled]="form.invalid">Submit</button>
+</form>
